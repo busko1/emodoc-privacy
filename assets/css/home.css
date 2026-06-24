@@ -1,0 +1,92 @@
+.app-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.app-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px 32px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.app-card:hover {
+  border-color: var(--mint-soft);
+  box-shadow: 0 4px 24px rgba(16, 185, 129, 0.08);
+}
+
+.app-card-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.app-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--emerald) 0%, var(--emerald-dark) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 800;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.app-name {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--emerald-deep);
+  margin: 0;
+}
+
+.app-tagline {
+  color: var(--text-light);
+  font-size: 14px;
+  margin: 0;
+}
+
+.app-description {
+  margin-bottom: 20px;
+  color: var(--text);
+}
+
+.app-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.app-links a {
+  display: inline-block;
+  padding: 8px 16px;
+  background: var(--mint);
+  border: 1px solid var(--mint-soft);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  border-bottom: 1px solid var(--mint-soft);
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.app-links a:hover {
+  background: var(--mint-soft);
+  border-color: var(--emerald);
+  border-bottom-color: var(--emerald);
+}
+
+.contact-block {
+  margin-top: 48px;
+  background: #FAFBFC;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px 28px;
+  text-align: center;
+}
+
+.contact-block p { margin: 0; }
